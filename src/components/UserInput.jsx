@@ -1,26 +1,38 @@
+import { useState } from "react";
+
 export default function UserInput() {
   return (
-    <div id="user-input">
-      <div className="input-group">
-        <label htmlFor="">
-          Initial Investment
-          <input type="number" />
-        </label>
-        <label htmlFor="">
-          Annual Investment
-          <input type="number" />
-        </label>
+    <section>
+      <div id="user-input">
+        <div className="input-group">
+          <p>
+            <label htmlFor="">
+              Initial Investment
+            </label>
+              <input type="number" required />
+          </p>
+          <p>
+            <label htmlFor="">
+              Annual Investment
+            </label>
+              <input type="number" required />
+          </p>
+        </div>
+        <div className="input-group">
+          <p>
+            <label htmlFor="">
+              Expected Return
+            </label>
+              <input type="number" required />
+          </p>
+          <p>
+            <label htmlFor="">
+              Duration
+            </label>
+              <input type="number" required />
+          </p>
+        </div>
       </div>
-      <div className="input-group">
-        <label htmlFor="">
-          Expected Return
-          <input type="number" />
-        </label>
-        <label htmlFor="">
-          Duration
-          <input type="number" />
-        </label>
-      </div>
-    </div>
+    </section>
   );
 }
